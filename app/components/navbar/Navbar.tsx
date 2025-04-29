@@ -1,9 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+
+import globe from '@/public/globe.svg'
+
 import SearchFilters from './SearchFilters'
 import UserNav from './UserNav'
-import globe from '@/public/globe.svg'
+import AddPropertyButton from '../AddPropertyButton'
 
 const Navbar = () => {
   return (
@@ -13,17 +16,19 @@ const Navbar = () => {
                 <Link href={"/"}>
                     <Image 
                         src={globe} 
-                        alt={"logo"} 
+                        alt="logo"
                         width={30}
                         height={30}
                     />
                 </Link>
 
-                <div className='hidden md:flex items-center space-x-6'>
+                <div className='flex items-center space-x-6'>
                     <SearchFilters />
                 </div>
 
                 <div id="burger" className='flex items-center space-x-6'>
+                    <AddPropertyButton />
+
                     <UserNav />
                 </div>
             </div>
