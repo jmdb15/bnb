@@ -4,6 +4,7 @@ import cabins from './cabins.jpg'
 import islands from './islands.jpg'
 import boats from './boats.jpg'
 import houses from './houses.jpg'
+import profile from './profile_pic_1.png'
 
 export {
   beach,
@@ -11,5 +12,6 @@ export {
   cabins, 
   islands,
   boats,
-  houses
+  houses,
+  profile
 }

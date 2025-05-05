@@ -6,7 +6,7 @@ import globe from '@/public/globe.svg'
 
 import SearchFilters from './SearchFilters'
 import UserNav from './UserNav'
-import AddPropertyButton from '../AddPropertyButton'
+import AddPropertyButton from './AddPropertyButton'
 
 const Navbar = () => {
   return (
